@@ -1,0 +1,107 @@
+\documentclass[10pt,a4paper,sans]{moderncv}
+
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+
+%\usepackage[maxnames=10, backend=bibtex8]{biblatex}
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.8]{geometry}
+
+\input{personaldata.tex}
+%\bibliography{publications}
+
+\makeatletter
+\name{Lorenzo}{Ferrillo}
+\title{Curriculum Vitae}
+\email{\@@@email}
+\phone[mobile]{\@@@phone}
+\extrainfo{Date of birth: 07/01/1995}
+\social[github][github.com/llde]{github.com/llde}
+\makeatother
+
+%\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+
+\def\pplus{\texttt{++}}
+\def\sharp{\texttt{\#}}
+
+%\renewcommand{\refname}{Research activities and publications}
+%\DefineBibliographyExtras{english}{\let\finalandcomma=\empty}
+%\newcommand{\pubitem}[1]{
+%    \cvitem{\citefield{#1}{year}}{\textbf{\citefield{#1}{title}} (with \citename{#1}{author}), in \textit{\citefield{#1}{booktitle} } }
+%}
+
+\begin{document}
+    \makecvtitle
+
+    \section{Education}
+    \cventry{2022}{Bachelor Degree in Computer Science}{Sapienza University of Rome, Italy}{}{}{
+        Final mark: \emph{100/110}\\
+        Thesis title: \emph{Rilevamento di vulnerabilità tramite reti neurali a convoluzione}.\\
+        Advisors: \emph{Prof. Fabio De Gaspari}.\\
+        Description: \emph{We present a system for vulnerability detection using convolutional neural network and a  number of scripts to prepare the dataset for training}.
+    }
+
+    \section{Computer skills}
+    \cvitem{Programming}{
+        Fluent in Rust, Python and C.
+    }
+    \cvitem{}{
+        Good knowledge of C\pplus{}, Java  and Intel x86 Assembly programming languages.
+    }
+    \cvitem{}{
+        Knowledge of SQL,  \LaTeX, C\sharp{} and HLSL.
+        Basic knowledge in HTML and CSS.
+    }
+    \cvitem{Development tools}{
+        Good knowledge of Git and the Git workflow. 
+        My main development tools include JetBrains IDEs (CLion, IntelliJ Idea, PyCharm), Microsoft Visual Studio and Visual Studio Code, Powershell, zsh, Notepad\pplus, Kate.
+    }
+    \cvitem{Reverse Engineering}{
+        Medium knowledge for Disassemblers and decompilers IDA Pro and Cutter (Rizin/Radare2)
+    }
+    \cvitem{Operating systems}{
+        Good knowledge of the Windows operating system and, in particular, Windows XP/7/8/10.
+    }
+    \cvitem{}{
+        Good knowledge of GNU/Linux and, in particular Ubuntu, Fedora and Arch Linux distributions.
+        Limited knowledge on other Unix OSes, as OSX, WebOS and BSD systems.
+    }
+    
+    \section{University projects}
+    \cvitem{Crawly}{A Concurrent Web Crawler made in Java using the JavaFX library as the project for the course of "Metodology of Programming". }
+    \cvitem{Crypto-Sithis}{A Client/Server program using pseudo-random numbers to crypt files on disk for the course of "System Programming".}
+    \cvitem{311-X}{Software analysis and architecture engineering for a multi-application Uber-like service for "Software Engineering" }
+    \cvitem{city-builder}{Procedural generation of the buildings of a city, using the yocto-gl library for rendering for "Computer Graphic"}
+    \section{Personal projects}
+    \cvitem{xOBSE}{An injector to extend the engine capabilities for the game "The Elder Scroll 4: Oblivion". Use C++ and inline Microsoft Assembly (MASM).}
+    \cvitem{TESReloaded}{An extender for TES4:Oblivion, TES5:Skyrim (legacy/oldrim) and Fallout: New Vegas to introduce new graphical capabilities to the engine. }
+    \cvitem{hlslDecompiler}{Work in progress decompiler for the directX shader bytecode to hlsl translation }
+    \section{Open Source Contributions}
+    \cvitem{}{
+        Made contributions in the following projects: Ureq, roctogen, patch-rs, Wine-Mono, Wine-Tkg, Wine-Staging, Wrye-Bash 
+    }
+    
+    \section{Languages}
+    \cvitem{Italian}{Mother tongue.}
+    \cvitem{English}{Self-assessment (Common European Framework of Reference for Languages, CEFR).}
+    \cvitem{}{\begin{tabular}{l@{\hspace{.5cm}}l}
+        Reading: & C1 (Proficient user)\\
+        Listening: & B2 (Indipendent user)\\
+        Writing: & C1 (Proficient user)\\
+        Speaking: & B1 (Indipendent user)
+    \end{tabular}}
+
+    \section{Spare time activities}
+    \cvitem{Hobbies}{
+        Videogames: mainly strategic and RPG videogames.    
+    }
+    \cvitem{}{
+        Games: Chess, Reversi, Card games
+    }
+    \cvitem{}{
+        Music: Synphonic Metal and Power Metal listener.
+    }
+
+    \cvitem{Interests}{Programming, modding, science in general.}
+
+\end{document}
