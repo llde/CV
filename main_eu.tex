@@ -1,28 +1,29 @@
-\documentclass[logo, flagCMYK]{europasscv2}
+\documentclass[logo,notitle,a4paper]{europass-cv}
 
 \usepackage{graphicx}
-
 \usepackage[utf8]{inputenc}
-\usepackage{geometry}
-
+\usepackage[scale=0.8]{geometry}
 \input{personaldata.tex} %Use personaldata_d.tex as template
 
 \def\pplus{\texttt{++}}
 \def\sharp{\texttt{\#}}
 \ecvLeftColumnWidth{4cm}
+
 \ecvname{Lorenzo Ferrillo}
 \makeatletter
-\ecvtelephone[\@@@phone]{\@@@homeph}
+\ecvtelephone[\@@@homeph]{\@@@phone}
 \ecvemail{\@@@email}
 \ecvaddress{\@@@address}
 \makeatother
 \ecvdateofbirth{07/01/1995}
-\ecvgithubpage{www.github.com/llde}
-\ecvgitlabpage{www.gitlab.com/llde}
+\ecvgithub{www.github.com/llde}
 %\ecvdate{\today}
+%\setlength{\voffset}{-0.75in}
+\setlength{\headsep}{8pt}
+\setlength{\headheight}{5pt}
 
 \begin{document}
-\begin{europasscv}
+\begin{europecv}
 \ecvpersonalinfo
 
     \section{Education}
@@ -90,10 +91,13 @@
 
     \ecvitem{Interests}{Programming, Modding, History, Science, general culture.}
 
-\end{europasscv}
+\end{europecv}
+
+
+
 \begin{footnotesize}
-\vspace{12cm}
+\vspace{6cm}
 Autorizzo il trattamento dei miei dati personali presenti nel cv ai sensi del Decreto Legislativo 30 giugno 2003, n. 196 “Codice in materia di protezione dei dati personali” e dell’art. 13 del GDPR                 (Regolamento UE 2016/679).
 \end{footnotesize}  
-
+  
 \end{document}
