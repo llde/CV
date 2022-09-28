@@ -1,0 +1,6 @@
+[submodule "europass-cv"]
+	path = europass-cv
+	url = https://github.com/llde/europass-cv.git
+[submodule "europasscv"]
+	path = europasscv
+	url = https://github.com/llde/europasscv.git
