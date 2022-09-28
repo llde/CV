@@ -4,3 +4,9 @@
 [submodule "europasscv"]
 	path = europasscv
 	url = https://github.com/llde/europasscv.git
+[submodule "EuropeCV"]
+	path = EuropeCV
+	url = https://github.com/llde/EuropeCV.git
+[submodule "moderncv"]
+	path = moderncv
+	url = https://github.com/llde/moderncv
